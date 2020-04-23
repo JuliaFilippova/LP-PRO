@@ -271,7 +271,8 @@
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 42px;
+        line-height: 1.1;
     }
 
     h2 {
@@ -391,11 +392,11 @@
     }
 
     .advantages li span:last-child {
-        font-size: 27px;
+        font-size: 29px;
     }
 
     .head-subtitle {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .offer-text .head-subtitle {
@@ -438,11 +439,19 @@
         width: 95%;
     }
 
+    .input-tel:before {
+        top: 4px;
+    }
+
     .footer-menu {
         width: 295px;
     }
 
     .footer-menu li:before {
         right: -15px;
+    }
+
+    .modal-privacy__body {
+        height: 70vh;
     }
 }
