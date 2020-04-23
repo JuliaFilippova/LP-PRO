@@ -745,6 +745,7 @@ input:focus {
 .form p,
 .btn-form {
   margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .iti--separate-dial-code .iti__selected-flag,
