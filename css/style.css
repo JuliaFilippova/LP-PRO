@@ -776,6 +776,7 @@ input:focus {
 
 }
 
+.input,
 .iti,
 .select select {
   border: 3px solid #f3f3f3;
