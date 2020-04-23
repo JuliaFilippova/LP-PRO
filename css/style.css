@@ -729,6 +729,10 @@ input:focus {
   text-align: center;
 }
 
+.form p {
+  font-size: 12px;
+}
+
 .form-title {
   margin-bottom: 20px;
 }
