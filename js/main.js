@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const trigger = document.querySelectorAll(triggerSelector), //кнопки вызывающие модалку
             modal = document.querySelector(modalSelector), // подложка модального окна 
             modalBody = document.querySelector(modalSelectorBody), //модальное окно окошко
-            close = document.querySelector(closeSelector), //закрытие модального
+            close = document.querySelectorAll(closeSelector), //закрытие модального
             scroll = calcScroll(); //запустили функцию в переменной (убирает дергание страницы при открытие модального окна)
 
         trigger.forEach(item => { //цикл, т.к. у нас будет в нескольких местах вызываться модальное окно
@@ -22,12 +22,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
             });
         });
-        close.addEventListener('click', () => { //по клику на крестик закрываем окно
+        close.forEach(item => {
 
-            modal.classList.remove('modal-overlay-show'); //класс для плавного показа мод окна
-            modalBody.classList.remove('modal-body-show'); //класс для плавного показа мод окна
-            document.body.style.overflow = ''; //возвращает скролл
-            document.body.style.marginRight = `0px`; // убирает дергание страницы при закрытии модального окна
+            item.addEventListener('click', () => { //по клику на крестик закрываем окно
+
+                modal.classList.remove('modal-overlay-show'); //класс для плавного показа мод окна
+                modalBody.classList.remove('modal-body-show'); //класс для плавного показа мод окна
+                document.body.style.overflow = ''; //возвращает скролл
+                document.body.style.marginRight = `0px`; // убирает дергание страницы при закрытии модального окна
+
+            });
 
         });
 
@@ -67,14 +71,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
         buttonMenu.addEventListener('click', () => {
             menu.classList.toggle('burger-menu__active');
-            document.body.style.overflow = 'hidden'; //убирает скролл
+            document.body.classList.toggle('over-hid');
         });
 
         document.querySelector('.modal-window_burger').onclick = (e) => {
             if (e.target.classList.contains('modal-window_burger')) {
                 menu.classList.remove('burger-menu__active');
+                document.body.classList.remove('over-hid');
             }
         }
+
+
+
     }
     burgerMenu('.burger-menu');
 

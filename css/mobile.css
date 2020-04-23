@@ -255,6 +255,7 @@
 @media screen and (max-width: 575px) {
     .logo {
         font-size: 25px;
+        padding: 7px 24px;
     }
 
     .logo span {
@@ -412,9 +413,9 @@
         margin-bottom: 35px;
     }
 
-    .type-phone__brend {
+    /* .type-phone__brend {
         height: 55px;
-    }
+    } */
 
     .type-phone__brend img {
         width: 80%;
@@ -437,10 +438,6 @@
 
     .about-form {
         width: 95%;
-    }
-
-    .input-tel:before {
-        top: 4px;
     }
 
     .footer-menu {

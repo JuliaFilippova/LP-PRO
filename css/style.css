@@ -96,6 +96,7 @@ header {
   flex-grow: 1;
 }
 
+
 .over-hid {
   overflow: hidden;
 }
@@ -598,7 +599,6 @@ header {
 
 /* hamburger menu mobile END */
 
-
 /* head-offer */
 .head-offer {
   position: relative;
@@ -709,9 +709,9 @@ header {
   background: #f3f3f399;
 }
 
-.type-phone__brend {
+/* .type-phone__brend {
   height: 80px;
-}
+} */
 
 .type-phone span {
   font-size: 20px;
@@ -916,7 +916,7 @@ header {
   height: 15px;
   background: url('../img/russia-flag.png') no-repeat center /cover;
   left: 0;
-  top: 2px;
+  top: 4px;
   box-shadow: 0 0px 5px 0px rgba(0, 0, 0, .5);
 }
 
