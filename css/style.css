@@ -224,6 +224,7 @@ header {
 }
 
 /* флексбокс для классов */
+.offer-text__box,
 .flexbox,
 .company-brend,
 .company-data,
@@ -243,6 +244,7 @@ header {
   justify-content: space-between;
 }
 
+.offer-text__box,
 .flexbox,
 .company-brend,
 .company-data,
@@ -606,6 +608,7 @@ header {
   font-family: 'FuturaPT 400', sans-serif;
 }
 
+.bg-offer_2,
 .bg-offer {
   position: absolute;
   width: 100%;

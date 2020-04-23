@@ -1,0 +1,37 @@
+.page-iphone .bg-offer_2 {
+    background: #f3f3f3;
+}
+
+.page-iphone {
+    color: #000000;
+}
+
+.page-iphone .offer-text {
+    width: 50%;
+    padding: 60px 0 65px;
+}
+
+.page-iphone .offer-text .head-subtitle {
+    margin: 20px 0 25px;
+}
+
+.page-iphone .offer-img {
+    bottom: 0;
+    right: -15px;
+}
+
+.offer-text__box {
+    width: 94%;
+}
+
+.sale-price {
+    border: 2px solid red;
+    padding: 10px 19px;
+    background: transparent;
+    font-size: 28px;
+    font-family: 'FuturaPT 700', sans-serif;
+}
+
+.page-iphone .btn {
+    padding: 15px 55px;
+}
