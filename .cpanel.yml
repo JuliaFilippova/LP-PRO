@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bhx20547/phone.codeid.ru/
+    - /bin/cp -a * $DEPLOYPATH
