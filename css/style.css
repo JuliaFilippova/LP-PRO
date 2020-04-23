@@ -742,6 +742,11 @@ input:focus {
   text-align: center;
 }
 
+.btn-form,
+.form-subtitle {
+  margin-bottom: 15px;
+}
+
 .iti--separate-dial-code .iti__selected-flag,
 .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
   background-color: transparent !important;
