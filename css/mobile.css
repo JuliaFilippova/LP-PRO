@@ -1,0 +1,399 @@
+/*-- MEDIA QUERIES --*/
+/*-- 992-1200px col-lg --*/
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 97%;
+    }
+}
+
+/*-- 992-1200px col-lg --*/
+@media screen and (max-width: 1200px) {
+    .company-info {
+        padding: 10px 0;
+    }
+
+    .company-brend {
+        /* width: 34%; */
+        width: 27%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .company-brend__slogan {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .company-data {
+        width: 80%;
+    }
+
+    .company-data__address {
+        padding-left: 0;
+    }
+
+    .nav-menu {
+        width: 70%;
+        padding-right: 20px;
+    }
+
+    .search {
+        width: 30%;
+        padding: 8px 15px;
+        background: #fff;
+        border-radius: 30px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        border: 3px solid #67b4eb;
+    }
+
+    .nav-menu a {
+        font-size: 17px;
+    }
+
+    .menu-dropdown_list {
+        width: 55%;
+    }
+
+    .menu-dropdown_link li {
+        width: 18.5%;
+    }
+
+    .offer-text {
+        width: 69%;
+    }
+
+    .type-phone {
+        width: 18%;
+    }
+
+    .info-about__text {
+        padding: 20px;
+    }
+
+    .about-form {
+        width: 40%;
+    }
+
+    .networks {
+        margin: 0;
+    }
+
+    .footer-menu {
+        width: 380px;
+        margin: 15px auto 40px;
+    }
+
+
+}
+
+/*-- 768-992px col-lg --*/
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+
+    .burger-mobile {
+        display: block;
+    }
+
+    .nav-bar,
+    .company-data {
+        display: none;
+    }
+
+    .company-brend {
+        width: 370px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .company-brend__slogan {
+        width: 60%;
+        margin-top: 0;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .offer-text {
+        width: 70%;
+    }
+
+    .offer-img {
+        width: 520px;
+    }
+
+    .offer-text .head-subtitle,
+    .offer-text .advantages {
+        width: 90%;
+    }
+
+    .advantages li span:first-child {
+        font-size: 14px;
+    }
+
+    .advantages li span:last-child {
+        font-size: 20px;
+    }
+
+    .types-content {
+        justify-content: end;
+        width: 90%;
+    }
+
+    .type-phone {
+        width: 23%;
+        margin: 1%;
+    }
+
+    .gallery img {
+        width: 25%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .footer {
+        padding: 20px 0px;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+
+    .footer a i {
+        font-size: 16px;
+    }
+
+    .copy,
+    .confid {
+        font-size: 12px;
+    }
+}
+
+/*-- 575-768px col-lg --*/
+@media screen and (max-width: 768px) {
+    .offer-img {
+        display: none;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .types-content,
+    .offer-text .head-subtitle,
+    .offer-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .offer-text .advantages {
+        width: 85%;
+        margin: 30px auto;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .info-about {
+        width: 100%;
+    }
+
+    .info-about__text {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about-form {
+        width: 80%;
+        margin: 50px auto 0;
+    }
+
+    .gallery {
+        flex-flow: wrap;
+    }
+
+    .gallery img {
+        width: 50%;
+        height: 155px;
+    }
+
+    .footer-container {
+        width: 65%;
+    }
+
+    .footer-menu {
+        width: 300px;
+    }
+}
+
+/*-- 420-575px col-lg --*/
+@media screen and (max-width: 575px) {
+    .logo {
+        width: 130px;
+    }
+
+    .company-brend {
+        width: 350px;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .offer-text .advantages {
+        width: 100%;
+    }
+
+    .advantages li {
+        width: 33%;
+    }
+
+    .about,
+    .types-devices {
+        padding: 60px 0 15px;
+    }
+
+    .type-phone {
+        width: 31%;
+    }
+
+    .footer-container {
+        width: 95%;
+    }
+
+    .modal-window__body {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .close-modal {
+        right: 20px;
+        top: 20px;
+    }
+}
+
+/*-- 320-420px col-lg --*/
+@media screen and (max-width: 420px) {
+    h2 {
+        line-height: 1.5;
+    }
+
+    .burger-menu__btn {
+        width: 30px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .company-brend {
+        width: 265px;
+    }
+
+    .company-brend__slogan {
+        font-size: 10px;
+    }
+
+    .burger-menu__nav {
+        padding: 65px 0 15px;
+    }
+
+    .advantages {
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .advantages li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .advantages li span:first-child {
+        font-size: 17px;
+    }
+
+    .advantages li span:last-child {
+        font-size: 27px;
+    }
+
+    .head-subtitle {
+        font-size: 14px;
+    }
+
+    .offer-text .head-subtitle {
+        margin: 20px 0 25px;
+    }
+
+    .offer-text .head-subtitle,
+    .offer-text .advantages {
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        margin-bottom: 35px;
+    }
+
+    .type-phone__brend {
+        height: 55px;
+    }
+
+    .type-phone__brend img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .type-phone span {
+        font-size: 15px;
+        min-height: 30px;
+    }
+
+    .btn {
+        padding: 12px 15px 14px;
+    }
+
+    .info-about__text {
+        padding: 30px 11px;
+    }
+
+    .about-form {
+        width: 95%;
+    }
+
+    .footer-menu {
+        width: 100%;
+        margin: 25px auto 30px;
+    }
+
+    .footer-menu li:before {
+        right: -14px;
+    }
+
+    .networks {
+        width: 75%;
+        margin: auto;
+    }
+
+    .footer a p {
+        display: none;
+    }
+
+    .footer a i {
+        font-size: 19px;
+    }
+
+}

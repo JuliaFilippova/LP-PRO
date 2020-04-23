@@ -4,16 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title>Ремонт смартфонов в Москве в день обращения</title>
 	<!-- META Search -->
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<meta name="description" content="Ремонт iPhone, Ремонт iPad, Ремонт смартфонов, Ремонт планшетов">
+	<meta name="keywords" content="Сеть официальных сервисных центров по ремонту мобильных телефонов">
 	<!-- OG Open Graph -->
-	<meta property="og:title" content="">
-	<meta property="og:description" content="">
-	<meta property="og:type" content="">
+	<meta property="og:title" content="Ремонт смартфонов в Москве">
+	<meta property="og:description"
+		content="Сеть официальных сервисных центров по ремонту мобильных телефонов, смартфонов и планшетов">
+	<meta property="og:type" content="Ремонт смартфонов в Москве в день обращения">
 	<meta property="og:image" content="img/meta-preview.png">
-	<meta property="og:site_name" content="">
+	<meta property="og:site_name" content="Ремонт смартфонов в Москве">
 	<!-- FAVICON-->
 	<!-- <link rel="icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> -->
@@ -26,8 +27,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 	<!-- Bootstrap CSS -->
 	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/intlTelInput.min.css">
 	<!-- Main CSS -->
+
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
@@ -74,6 +78,22 @@
 							</div>
 						</li>
 					</ul>
+					<!-- гамбургер меню, мобильное разрешение -->
+					<div class="burger-mobile">
+						<div class="burger-menu">
+							<a href="#" class="burger-menu__btn">
+								<span class="burger-menu__lines"></span>
+							</a>
+							<ul class="burger-menu__nav">
+								<li><a href="#" class="burger-menu__link">Ремонт iPhone</a></li>
+								<li><a href="#" class="burger-menu__link">Ремонт iPad</a></li>
+								<li><a href="#" class="burger-menu__link">Ремонт смартфонов</a></li>
+								<li><a href="#" class="burger-menu__link">Ремонт планшетов</a></li>
+								<li class="burger-menu__phone">Запись на ремонт<a href="tel:+74951043113">+7 (495)
+										104-31-13</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -197,14 +217,14 @@
 											</a>
 										</li>
 									</ul>
-									<button class="btn">Позвонить мастеру</button>
+									<button class="btn js-modal-form">Позвонить мастеру</button>
 								</div>
 								<div class="menu-dropdown_img-wrap">
 									<div class="menu-dropdown_img">
-										<span class="sticker-sale">
+										<p class="sticker-sale">
 											100% бесплатно
-											<p>Диагностика и доставка</p>
-										</span>
+											<span>Диагностика и доставка</span>
+										</p>
 										<img src="img/iphone-menu.png" alt="Изображение">
 									</div>
 								</div>
@@ -273,15 +293,15 @@
 											</a>
 										</li>
 									</ul>
-									<button class="btn">Позвонить мастеру</button>
+									<button class="btn js-modal-form">Позвонить мастеру</button>
 								</div>
 								<div class="menu-dropdown_img-wrap">
 									<div class="menu-dropdown_img">
-										<span class="sticker-sale">
+										<p class="sticker-sale">
 											30% <br> скидка
-											<p>На полноценный ремонт iPad</p>
-										</span>
-										<img src="img/iphone-menu.png" alt="Изображение">
+											<span>На полноценный ремонт iPad</span>
+										</p>
+										<img src="img/ipadpro.png" alt="Изображение">
 									</div>
 								</div>
 							</div>
@@ -329,15 +349,15 @@
 											</a>
 										</li>
 									</ul>
-									<button class="btn">Позвонить мастеру</button>
+									<button class="btn js-modal-form">Позвонить мастеру</button>
 								</div>
 								<div class="menu-dropdown_img-wrap">
 									<div class="menu-dropdown_img">
-										<span class="sticker-sale">
+										<p class="sticker-sale">
 											45% <br> скидка
-											<p>На ремонт смартфонов</p>
-										</span>
-										<img src="img/iphone-menu.png" alt="Изображение">
+											<span>На ремонт смартфонов</span>
+										</p>
+										<img src="img/smart.png" alt="Изображение">
 									</div>
 								</div>
 							</div>
@@ -385,15 +405,15 @@
 											</a>
 										</li>
 									</ul>
-									<button class="btn">Позвонить мастеру</button>
+									<button class="btn js-modal-form">Позвонить мастеру</button>
 								</div>
 								<div class="menu-dropdown_img-wrap">
 									<div class="menu-dropdown_img">
-										<span class="sticker-sale">
+										<p class="sticker-sale">
 											Вам Подарок
-											<p>Защитное стекло для планшета</p>
-										</span>
-										<img src="img/iphone-menu.png" alt="Изображение">
+											<span>Защитное стекло для планшета</span>
+										</p>
+										<img src="img/ipadpro.png" alt="Изображение">
 									</div>
 								</div>
 							</div>
@@ -549,44 +569,43 @@
 						<option value="Замена аккумулятора">Замена аккумулятора</option>
 					</select>
 				</div>
-				<input type="tel" class="input" placeholder="80080898989">
+				<input type="tel" name="phone" class="input" value="+7">
 				<button class="btn">Узнать стоимость</button>
 			</form>
 		</div>
-
 	</section>
-	<section class="gallery" id="gallery">
-		<img src="img/gallery1.webp" alt="Изображение">
-		<img src="img/gallery2.webp" alt="Изображение">
-		<img src="img/gallery3.webp" alt="Изображение">
-		<img src="img/gallery4.webp" alt="Изображение">
-	</section>
+	<div class="gallery" id="gallery">
+		<img src="img/gallery1.png" alt="Изображение">
+		<img src="img/gallery2.png" alt="Изображение">
+		<img src="img/gallery3.png" alt="Изображение">
+		<img src="img/gallery4.png" alt="Изображение">
+	</div>
 	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="footer-container">
 				<ul class="networks">
 					<li>
-						<a href="#">
+						<a href="https://vk.com/feed" target="_blank">
 							<i class="fab fa-vk"></i>
-							Вконтакте
+							<p>Вконтакте</p>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="https://www.instagram.com/?hl=ru" target="_blank">
 							<i class="fab fa-instagram"></i>
-							Instagram
+							<p>Instagram</p>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="https://www.youtube.com/?hl=ru&gl=RU" target="_blank">
 							<i class="fab fa-youtube"></i>
-							Youtube
+							<p>Youtube</p>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fab fa-whatsapp"></i>
-							WhatsApp
+							<p>WhatsApp</p>
 						</a>
 					</li>
 				</ul>
@@ -622,8 +641,9 @@
 		</div>
 	</footer>
 	<!-- modal window -->
+	<!-- <div class="modal-window"></div> -->
 
-	<div class="modal-window" data-modal>
+	<div class="modal-window">
 		<div class="modal-window__body">
 			<form class="form">
 				<h3 class="form-title">
@@ -648,7 +668,7 @@
 						<option value="Замена аккумулятора">Замена аккумулятора</option>
 					</select>
 				</div>
-				<input type="tel" class="input" placeholder="80080898989">
+				<input type="tel" name="phone" class="input" value="+7">
 				<button class="btn">Узнать стоимость</button>
 			</form>
 		</div>
@@ -667,7 +687,13 @@
 
 	<!-- modal window -->
 	<!-- <script src="js/jquery-3.4.1.min.js"></script> -->
+	<!-- <script src="https://unpkg.com/imask"></script> -->
 	<!-- <script src="js/jquery.maskedinput.js"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+		type="text/javascript"></script> -->
+	<script src="js/utils.js"></script>
+	<script src="js/intlTelInput.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

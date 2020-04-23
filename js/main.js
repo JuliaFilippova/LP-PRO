@@ -7,7 +7,6 @@ window.addEventListener('DOMContentLoaded', () => {
             modal = document.querySelector(modalSelector), // подложка модального окна 
             modalBody = document.querySelector(modalSelectorBody), //модальное окно окошко
             close = document.querySelector(closeSelector), //закрытие модального
-            windows = document.querySelectorAll('[data-modal]'), //общий атрибут data-modal у каждой мадалки
             scroll = calcScroll(); //запустили функцию в переменной (убирает дергание страницы при открытие модального окна)
 
         trigger.forEach(item => { //цикл, т.к. у нас будет в нескольких местах вызываться модальное окно
@@ -16,44 +15,28 @@ window.addEventListener('DOMContentLoaded', () => {
                     e.preventDefault();
                 }
 
-                // windows.forEach(item => { //закрываются все модальные окна по клику по общему атрибуту data-modal
-                //     item.style.opacity = '0'
-                // });
-
-                modal.classList.add('modal-overlay-show');
-                modalBody.classList.add('modal-body-show');
-                // modal.style.opacity = '1';
-                document.body.style.overflow = 'hidden';
+                modal.classList.add('modal-overlay-show'); //класс для плавного показа мод окна
+                modalBody.classList.add('modal-body-show'); //класс для плавного показа мод окна
+                document.body.style.overflow = 'hidden'; //убирает скролл
                 document.body.style.marginRight = `${scroll}px`; // убирает дергание страницы при открытие модального окна
 
             });
         });
         close.addEventListener('click', () => { //по клику на крестик закрываем окно
-            windows.forEach(item => { //закрываются все модальные окна по клику по общему атрибуту data-modal
-                // item.style.opacity = '0'
-                // document.body.classList.remove('modal-overlay-show');
-            });
 
-            modal.classList.remove('modal-overlay-show');
-            modalBody.classList.remove('modal-body-show');
-            // modal.style.opacity = '0';
-            document.body.style.overflow = '';
+            modal.classList.remove('modal-overlay-show'); //класс для плавного показа мод окна
+            modalBody.classList.remove('modal-body-show'); //класс для плавного показа мод окна
+            document.body.style.overflow = ''; //возвращает скролл
             document.body.style.marginRight = `0px`; // убирает дергание страницы при закрытии модального окна
 
         });
 
         modal.addEventListener('click', (e) => { //по клику вне формы закрываем окно подложка
-            if (e.target === modal && closeClickOverlay) { //если 2 эти условия верны, то код выполнится
-                windows.forEach(item => { //закрываются все модальные окна по клику по общему атрибуту data-modal
-                    // item.style.opacity = '0'
-                    modal.classList.remove('modal-overlay-show');
-                    modalBody.classList.remove('modal-body-show');
-                });
+            if (e.target === modal && closeClickOverlay) {
 
-                modal.classList.remove('modal-overlay-show');
-                modalBody.classList.remove('modal-body-show');
-                // modal.style.opacity = '0';
-                document.body.style.overflow = '';
+                modal.classList.remove('modal-overlay-show'); //класс для плавного показа мод окна
+                modalBody.classList.remove('modal-body-show'); //класс для плавного показа мод окна
+                document.body.style.overflow = ''; //возвращает скролл
                 document.body.style.marginRight = `0px`; // убирает дергание страницы при закрытии модального окна
             }
         })
@@ -75,4 +58,26 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     bindModal('.js-modal-form', '.modal-window', '.modal-window__body', '.close-modal'); //модальное окно по клику
 
+
+    // hamburger menu
+    function burgerMenu(selector) {
+        let menu = document.querySelector(selector),
+            buttonMenu = document.querySelector('.burger-menu__btn');
+
+        buttonMenu.addEventListener('click', () => {
+            menu.classList.toggle('burger-menu__active');
+        });
+    }
+    burgerMenu('.burger-menu');
+
+
+    document.querySelectorAll(".input").forEach(item => {
+        window.intlTelInput(item, {
+            preferredCountries: ['ru', 'by', 'ua'],
+            allowDropdown: true,
+            autoHideDialCode: true,
+            nationalMode: true,
+            separateDialCode: false,
+        });
+    })
 })

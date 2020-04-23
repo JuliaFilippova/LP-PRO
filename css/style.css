@@ -5,6 +5,10 @@ body {
   margin: 0;
   padding: 0;
   font-size: 15px;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
 }
 
 .container {
@@ -81,8 +85,13 @@ button {
   border: none;
 }
 
-button :focus {
+button:focus {
   outline: none;
+  box-shadow: 0px 5px 7px rgba(0, 163, 255, 0.4);
+}
+
+header {
+  flex-grow: 1;
 }
 
 input:focus {
@@ -110,6 +119,7 @@ input:focus {
   opacity: 0;
   visibility: hidden;
   transition: .5s;
+  z-index: 9999;
 }
 
 .modal-window__body {
@@ -118,7 +128,7 @@ input:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
-  width: 60%;
+  width: 530px;
   padding: 30px;
   color: #000;
   min-height: 30%;
@@ -148,8 +158,8 @@ input:focus {
 /* крестик для закрытие модального окна по крестику */
 .close-modal {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -159,10 +169,10 @@ input:focus {
 .close-modal:before {
   content: '';
   position: absolute;
-  width: 40px;
+  width: 35px;
   height: 2px;
   background: #fff;
-  top: 0;
+  top: 17px;
 }
 
 .close-modal:after {
@@ -183,6 +193,7 @@ input:focus {
   padding: 12px 60px 14px;
   background: #2b88ca;
   border-radius: 50px;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
@@ -347,19 +358,11 @@ input:focus {
   border-top: 17px solid transparent;
 }
 
-
-
-
-
-
-
-
-
-
 .nav-menu__dropdown {
   padding: 20px;
   background: #fff;
   align-items: unset;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
 }
 
 .menu-dropdown_list {
@@ -400,13 +403,14 @@ input:focus {
 }
 
 .menu-dropdown_img-wrap {
-  min-height: 330px;
+  min-height: 337px;
 }
 
 .menu-dropdown_img {
   position: absolute;
   bottom: 0;
   right: 15px;
+  width: 325px;
 }
 
 .sticker-sale {
@@ -427,20 +431,136 @@ input:focus {
 
 }
 
-.sticker-sale p {
+.sticker-sale span {
   margin-top: 8px;
   font-weight: 700;
   font-size: 14px;
 }
 
-
-
-
-
-
-
-
 /* dropdown menu header END */
+/* hamburger menu mobile */
+.burger-mobile {
+  display: none;
+}
+
+.burger-menu {
+  position: static;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.burger-menu__active.burger-menu {
+  overflow: visible;
+}
+
+.burger-menu__btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  z-index: 9999;
+  position: relative;
+}
+
+.burger-menu__lines,
+.burger-menu__lines:after,
+.burger-menu__lines:before {
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: #434344;
+  border-radius: 50px;
+}
+
+.burger-menu__lines {
+  top: 22px;
+  left: 0;
+}
+
+.burger-menu__lines:after {
+  content: '';
+  top: -10px;
+}
+
+.burger-menu__lines:before {
+  content: '';
+  top: 10px;
+}
+
+.burger-menu__active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu__active .burger-menu__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger-menu__active .burger-menu__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu__active .burger-menu__lines::before,
+.burger-menu__active .burger-menu__lines::after,
+.burger-menu__lines::before,
+.burger-menu__lines::after,
+.burger-menu__active .burger-menu__nav,
+.burger-menu__nav {
+  transition: .4s;
+}
+
+.burger-menu__nav {
+  position: absolute;
+  z-index: 222;
+  flex-direction: column;
+  opacity: 0.7;
+  top: -25rem;
+  width: 100%;
+  padding: 35px 0 15px;
+  background: #FFFDFD;
+  box-shadow: 0px 10px 10px rgb(36, 29, 29, .7);
+  border-radius: 0px 5px 5px 0px;
+  transition: .9s;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.burger-menu__active .burger-menu__nav {
+  top: 0;
+  transition: .4s;
+  opacity: 1;
+}
+
+.burger-menu__nav li a {
+  padding: 12px 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #2e2e2e;
+  font-weight: 700;
+  display: block;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.burger-menu__phone {
+  margin-top: 35px;
+}
+
+.burger-menu__phone,
+.burger-menu__phone a {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.burger-menu__active .overlay {
+  display: block;
+}
+
+/* hamburger menu mobile END */
+
+
+/* header-offer */
 .header-offer {
   position: relative;
   color: #fff;
@@ -461,6 +581,7 @@ input:focus {
   bottom: -45px;
   width: 610px;
   right: -45px;
+  z-index: -1;
 }
 
 .bg-offer:after {
@@ -536,7 +657,7 @@ input:focus {
   border-radius: 10px;
   padding: 15px;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 3%;
   position: relative;
   overflow: hidden;
   transition: .3s;
@@ -577,7 +698,7 @@ input:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url('../img/bg-about.webp') no-repeat center /cover;
+  background: url('../img/bg-about.png') no-repeat center /cover;
   z-index: -1;
 }
 
@@ -617,6 +738,20 @@ input:focus {
   text-align: center;
 }
 
+.iti--separate-dial-code .iti__selected-flag,
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  background-color: transparent !important;
+}
+
+.iti--separate-dial-code .iti__selected-dial-code,
+.input {
+  /* margin-left: 10px; */
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  /* order: 2; */
+}
+
+.iti,
 .input,
 .select select {
   display: block;
@@ -624,14 +759,16 @@ input:focus {
   width: 100%;
 }
 
+.iti,
 .select,
 .input {
   position: relative;
   margin-bottom: 25px;
+
 }
 
-.select select,
-.input {
+.iti,
+.select select {
   border: 3px solid #f3f3f3;
   border-radius: 50px;
   font-family: 'Open Sans', sans-serif;
@@ -644,6 +781,16 @@ input:focus {
   appearance: none;
 }
 
+.input {
+  border: none;
+  padding-left: 30px !important;
+}
+
+.iti__selected-flag:focus {
+  outline: none;
+}
+
+.iti:focus,
 .input:focus,
 .select select:focus {
   outline: 0;
@@ -677,7 +824,7 @@ input:focus {
 }
 
 .gallery img {
-  width: 30%;
+  width: 25%;
   height: 300px;
   object-fit: cover;
 }
@@ -691,6 +838,11 @@ input:focus {
 
 .footer a {
   color: #fff;
+  display: flex;
+}
+
+.footer a p {
+  margin-left: 10px;
 }
 
 .footer i {
@@ -724,11 +876,12 @@ input:focus {
   position: absolute;
   right: -18px;
   top: 0;
-
 }
 
 .copy {
   font-size: 13px;
+  margin-bottom: 8px;
+  color: #d4d4d4;
 }
 
 .confid {
@@ -736,6 +889,7 @@ input:focus {
   border-bottom: 1px solid;
   display: inline-block;
   cursor: pointer;
+  color: #d4d4d4;
 }
 
 .confid:hover {
@@ -753,3 +907,14 @@ input:focus {
 /* -- название --*/
 /* -- название --*/
 /* $blue-- название --*/
+
+.iti__flag {
+  background-image: url("../img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
+}
