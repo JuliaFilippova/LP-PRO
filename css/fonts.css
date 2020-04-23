@@ -1,0 +1,32 @@
+/*FONT-FACE*/
+@font-face {
+    font-family: 'FuturaPT 700';
+    src: url('../fonts/FuturaPT-Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/FuturaPT-Bold.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/FuturaPT-Bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/FuturaPT-Bold.svg#FuturaPT-Bold') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'FuturaPT 400';
+    src: url('../fonts/FuturaPT-Book.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/FuturaPT-Book.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/FuturaPT-Book.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/FuturaPT-Book.svg#FuturaPT-Book') format('svg');
+    /* Legacy iOS */
+}

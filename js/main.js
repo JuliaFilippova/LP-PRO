@@ -66,18 +66,40 @@ window.addEventListener('DOMContentLoaded', () => {
 
         buttonMenu.addEventListener('click', () => {
             menu.classList.toggle('burger-menu__active');
+            document.body.style.overflow = 'hidden'; //убирает скролл
         });
+
+        document.querySelector('.modal-window_burger').onclick = (e) => {
+            if (e.target.classList.contains('modal-window_burger')) {
+                menu.classList.remove('burger-menu__active');
+            }
+        }
     }
     burgerMenu('.burger-menu');
 
 
-    document.querySelectorAll(".input").forEach(item => {
-        window.intlTelInput(item, {
-            preferredCountries: ['ru', 'by', 'ua'],
-            allowDropdown: true,
-            autoHideDialCode: true,
-            nationalMode: true,
-            separateDialCode: false,
+
+    // маска для ввода телефона
+    document.querySelectorAll('.phone-mask').forEach(item => {
+        IMask(item, {
+            mask: '+{7} (000) 000-00-00'
         });
     })
+
+    // лайтбокс галерея
+    lightGallery(document.getElementById('lightgallery'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })

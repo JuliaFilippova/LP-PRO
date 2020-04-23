@@ -19,7 +19,6 @@
         align-items: flex-start;
     }
 
-
     .company-brend__slogan {
         width: 100%;
         margin-top: 10px;
@@ -51,6 +50,11 @@
 
     .nav-menu a {
         font-size: 17px;
+    }
+
+    .nav-menu__dropdown_wrap {
+
+        border-top: 17px solid transparent;
     }
 
     .menu-dropdown_list {
@@ -141,7 +145,7 @@
     }
 
     .types-content {
-        justify-content: end;
+        justify-content: center;
         width: 90%;
     }
 
@@ -150,19 +154,26 @@
         margin: 1%;
     }
 
-    .gallery img {
+    #lightgallery a {
         width: 25%;
         height: 200px;
-        object-fit: cover;
     }
 
     .footer {
         padding: 20px 0px;
     }
 
+    .footer-menu li:before {
+        content: '\2022';
+        position: absolute;
+        right: -30px;
+        top: 0;
+    }
+
     .footer a {
         font-size: 12px;
     }
+
 
     .footer a i {
         font-size: 16px;
@@ -218,11 +229,11 @@
         margin: 50px auto 0;
     }
 
-    .gallery {
+    #lightgallery {
         flex-flow: wrap;
     }
 
-    .gallery img {
+    #lightgallery a {
         width: 50%;
         height: 155px;
     }
@@ -232,19 +243,31 @@
     }
 
     .footer-menu {
-        width: 300px;
+        width: 335px;
+    }
+
+    .footer-menu li:before {
+        right: -23px;
     }
 }
 
 /*-- 420-575px col-lg --*/
 @media screen and (max-width: 575px) {
     .logo {
-        width: 130px;
+        font-size: 25px;
+    }
+
+    .logo span {
+        font-size: 15px;
     }
 
     .company-brend {
         width: 350px;
         align-items: center;
+    }
+
+    .burger-mobile {
+        margin-right: 12px;
     }
 
     h1 {
@@ -285,20 +308,41 @@
         right: 20px;
         top: 20px;
     }
+
+    .networks {
+        width: 240px;
+        margin: auto;
+    }
+
+    .footer a p {
+        display: none;
+    }
+
+    .footer a i {
+        font-size: 19px;
+    }
+
+    .footer-menu {
+        margin: 25px auto 30px;
+    }
 }
 
 /*-- 320-420px col-lg --*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 413px) {
+
     h2 {
         line-height: 1.5;
     }
 
-    .burger-menu__btn {
-        width: 30px;
+    .logo {
+        padding: 7px 17px;
+        width: 100px;
+        height: 50px;
+        font-size: 19px;
     }
 
-    .logo {
-        width: 100px;
+    .logo span {
+        font-size: 13px;
     }
 
     .company-brend {
@@ -306,11 +350,30 @@
     }
 
     .company-brend__slogan {
-        font-size: 10px;
+        font-size: 11px;
+    }
+
+    .burger-mobile {
+        margin-right: 16px;
     }
 
     .burger-menu__nav {
         padding: 65px 0 15px;
+    }
+
+    .burger-menu__btn,
+    .burger-menu__lines,
+    .burger-menu__lines:after,
+    .burger-menu__lines:before {
+        width: 25px;
+    }
+
+    .burger-menu__lines:after {
+        top: -8px;
+    }
+
+    .burger-menu__lines:before {
+        top: 8px;
     }
 
     .advantages {
@@ -363,7 +426,8 @@
     }
 
     .btn {
-        padding: 12px 15px 14px;
+        width: 100%;
+        padding: 15px 15px 17px;
     }
 
     .info-about__text {
@@ -375,25 +439,10 @@
     }
 
     .footer-menu {
-        width: 100%;
-        margin: 25px auto 30px;
+        width: 295px;
     }
 
     .footer-menu li:before {
-        right: -14px;
+        right: -15px;
     }
-
-    .networks {
-        width: 75%;
-        margin: auto;
-    }
-
-    .footer a p {
-        display: none;
-    }
-
-    .footer a i {
-        font-size: 19px;
-    }
-
 }
