@@ -864,22 +864,9 @@ header {
 /* -- название --*/
 /* -- название --*/
 /* -- название --*/
-/* $blue-- название --*/
+/* -- название --*/
 
-/* .iti__flag {
-  background-image: url("../img/flags.png");
-}
-
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-  .iti__flag {
-    background-image: url("../img/flags@2x.png");
-  }
-} */
-
-
-
-/* .form select, */
+/* form select, */
 .form {
   text-align: center;
 }
@@ -989,4 +976,24 @@ input:focus,
 .modal-form .input {
   border: 1px solid #c9c9c9;
   border-radius: 5px;
+}
+
+.modal-privacy__body {
+  height: 85vh;
+  width: 85vw;
+  overflow-y: scroll;
+}
+
+.privacy-policy h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #343434;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.privacy-policy p {
+  font-size: 17px;
+  color: #343434;
+  margin-bottom: 10px;
 }

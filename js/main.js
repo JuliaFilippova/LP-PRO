@@ -57,6 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
         return scrollWidth;
     }
     bindModal('.js-modal-form', '.modal-window', '.modal-window__body', '.close-modal'); //модальное окно по клику
+    bindModal('.js-modal-privacy', '.modal-privacy', '.modal-privacy__body', '.close-modal'); //политика конфиденциальности
 
 
     // hamburger menu
