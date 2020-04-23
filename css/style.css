@@ -752,6 +752,7 @@ input:focus {
   background-color: transparent !important;
 }
 
+.input-text,
 .iti--separate-dial-code .iti__selected-dial-code,
 .input {
   /* margin-left: 10px; */
@@ -760,6 +761,7 @@ input:focus {
   /* order: 2; */
 }
 
+.input-text,
 .iti,
 .input,
 .select select {
@@ -768,6 +770,7 @@ input:focus {
   width: 100%;
 }
 
+.input-text,
 .iti,
 .select,
 .input {
@@ -776,6 +779,7 @@ input:focus {
 
 }
 
+.input-text,
 .iti,
 .select select {
   border: 3px solid #f3f3f3;
@@ -790,6 +794,7 @@ input:focus {
   appearance: none;
 }
 
+/* .input-text, */
 .input {
   border: none;
   padding-left: 30px !important;
@@ -799,6 +804,7 @@ input:focus {
   outline: none;
 }
 
+.input-text:focus,
 .iti:focus,
 .input:focus,
 .select select:focus {
