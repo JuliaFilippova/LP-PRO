@@ -80,9 +80,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 document.body.classList.remove('over-hid');
             }
         }
-
-
-
     }
     burgerMenu('.burger-menu');
 
