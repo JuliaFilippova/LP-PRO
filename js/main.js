@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
     burgerMenu('.burger-menu');
 
 
-    document.querySelectorAll(".input-tel").forEach(item => {
+    document.querySelectorAll(".input").forEach(item => {
         window.intlTelInput(item, {
             preferredCountries: ['ru', 'by', 'ua'],
             allowDropdown: true,

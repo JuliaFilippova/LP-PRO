@@ -742,8 +742,8 @@ input:focus {
   text-align: center;
 }
 
-.btn-form,
-.form-subtitle {
+.form p,
+.btn-form {
   margin-bottom: 15px;
 }
 
@@ -776,7 +776,6 @@ input:focus {
 
 }
 
-.input,
 .iti,
 .select select {
   border: 3px solid #f3f3f3;
