@@ -45,6 +45,7 @@ a:hover {
 p {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 span {
@@ -229,6 +230,7 @@ header {
 }
 
 /* флексбокс для классов */
+.repair-info,
 .battery-replacement-content,
 .service-benefits-content,
 .repl-stages-card,
@@ -253,6 +255,7 @@ header {
   justify-content: space-between;
 }
 
+.repair-info,
 .replacement-advantages,
 .offer-text__box,
 .flexbox,
@@ -477,6 +480,7 @@ header {
   font-size: 24px;
   color: #fff;
   padding-top: 12px;
+  line-height: 1.3;
 
 }
 
@@ -687,6 +691,7 @@ header {
 }
 
 /*-- types-devices --*/
+.reviews,
 .malfunction,
 .tools-repair,
 .price-list,
