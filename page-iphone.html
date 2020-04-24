@@ -277,19 +277,21 @@
                 <ul class="advantages">
                     <li>
                         <span>Диагностика</span>
-                        <span>Бесплатно</span>
+                        <span class="color-blue">Бесплатно</span>
                     </li>
                     <li>
                         <span>Время ремонта</span>
-                        <span>от 10 минут</span>
+                        <span class="color-blue">от 10 минут</span>
                     </li>
                     <li>
                         <span>Гарантия </span>
-                        <span>до 3 лет</span>
+                        <span class="color-blue">до 3 лет</span>
                     </li>
                 </ul>
                 <div class="offer-text__box">
-                    <span class="sale-price">от 1 490 руб.</span>
+                    <span class="sale-price-border">
+                        <span class="sale-price"> от 1 490 руб.</span>
+                    </span>
                     <button class="btn js-modal-form">Записаться на ремонт</button>
                 </div>
             </div>
@@ -361,9 +363,9 @@
                         <img src="img/zamena-ekrana-2-min.png" alt="Изображение">
                     </div>
                     <div class="repl-stages-card__text">
-                        <p>Вызовите бесплатно курьера или <br> приезжайте в наш сервисный центр</p>
-                        <p>Наши сервисные центры работают с 10:00 до 20:00 ежедневно. Вызвать курьера для забора
-                            техники или мастера для ремонта на месте можно в любое время, даже в выходные.</p>
+                        <p>Снимаем старое <br> поврежденное стекло</p>
+                        <p>Старое стекло отделяется от матрицы на сепараторе при температуре 60 градусов. Матрица
+                            полностью очищается от остатков стекла.</p>
                     </div>
                 </div>
                 <div class="repl-stages-card">
@@ -372,10 +374,9 @@
                         <img src="img/zamena-ekrana-3-min.png" alt="Изображение">
                     </div>
                     <div class="repl-stages-card__text">
-                        <p>Проверяем работоспособность <br> тачскрина</p>
-                        <p>Важным условиям сохранения всех деталей дисплея в оригинале, является целостность
-                            матрицы. В этом случае потребуется только замена экрана, что гораздо дешевле, чем полная
-                            замена дисплея.</p>
+                        <p>Собираем новое стекло с <br> матрицей</p>
+                        <p>На вашу матрицу наклеивается новое стекло с рамкой и с помощью вакуумного пресса
+                            спрессовывается. Далее под давлением в специальной камере убираются пузырьки воздуха.</p>
                     </div>
                 </div>
                 <div class="repl-stages-card">
@@ -384,14 +385,13 @@
                         <img src="img/how-step-four-min.png" alt="Изображение">
                     </div>
                     <div class="repl-stages-card__text">
-                        <p>Проверяем работоспособность <br> тачскрина</p>
-                        <p>Важным условиям сохранения всех деталей дисплея в оригинале, является целостность
-                            матрицы. В этом случае потребуется только замена экрана, что гораздо дешевле, чем полная
-                            замена дисплея.</p>
+                        <p>Демонстрируем выполненные <br> работы и даём гарантию</p>
+                        <p>Рассказываем о выполненных работах, вы проверяете работоспособность и только после этого
+                            подписываете акт о ремонте. На все работы вы получаете 1 год гарантии.</p>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-video js-modal-form">
+            <button class="btn btn-video js-modal-video">
                 <i class="fab fa-youtube"></i>
                 Посмотрите видео процесса
             </button>
@@ -898,16 +898,87 @@
                         </p>
                     </div>
                 </div>
+                <a href="https://yandex.ru/profile/1354981931?lr=213" class="btn" target="_blank">Оставить отзыв</a>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="leave-request">
+                <h2 class="section-title">Остались вопросы? Звоните </h2>
+                <a href="tel:+74951043113" class="phone-big">
+                    +7 (495) 104-31-13
+                </a>
+                <form action="" class="form leave-request_form flexbox">
+                    <div class="input">
+                        <input type="tel" class="phone-mask" name="phone" placeholder="Номер телефона">
+                    </div>
+                    <button class="btn">Заказать звонок</button>
+                </form>
+            </div>
+            <div class="contacts-content">
+                <div class="contacts-content__box">
+                    <ul class="company-data">
+                        <li class="company-data__address">
+                            <span class="data-icon data-icon_red">M</span>
+                            <div class="address-block">
+                                <span>Румянцево</span>
+                                <p>Москва, дер. Румянцево, Киевское шоссе, 22-й км, корпус В, строение 2 , владение 4
+                                    БЦ «Румянцево», блок B, этаж 2, павильон 255В</p>
+                                <a href="tel:+74951043883">+7 (495) 104-38-83</a>
+                                <p>Пн-Пт: 10:00 - 20:00 <br>
+                                    Сб-Вс: 11:00 - 19:00</p>
+                            </div>
+                        </li>
+                        <li class="company-data__address">
+                            <span class="data-icon data-icon_grey">M</span>
+                            <div class="address-block">
+                                <span>Пражская</span>
+                                <p>Москва, Кировоградская улица, дом 15, ТЦ Гранд Юг, этаж 0, павильон Г-34</p>
+                                <a href="tel:+74951046116">+7 (495) 104-61-16</a>
+                                <p>Пн-Вс: 10:00 - 20:00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts-content__box">
+                    <ul class="company-data">
+                        <li class="company-data__address">
+                            <span class="data-icon data-icon_purple">M</span>
+                            <div class="address-block">
+                                <span>Улица 1905 года</span>
+                                <p>Москва, Большая Декабрьская ул., 3, стр. 1
+                                    ТЦ «Электроника на Пресне», синия линия, павильон В16</p>
+                                <a href="tel:+74951043773">+7 (495) 104-37-73</a>
+                                <p>Пн-Пт: 10:00 - 20:00 <br>
+                                    Сб-Вс: 11:00 - 19:00</p>
+                            </div>
+                        </li>
+                        <li class="company-data__address">
+                            <span class="data-icon data-icon_grey">M</span>
+                            <div class="address-block">
+                                <span>Пражская</span>
+                                <p>Москва, Кировоградская улица, дом 15, ТЦ Гранд Юг, этаж 0, павильон Б-33</p>
+                                <a href="tel:+74951046776">+7 (495) 104-67-76</a>
+                                <p>Пн-Вс: 10:00 - 20:00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts-content__box">
+                    <button class="btn js-modal-form">Записаться на ремонт</button>
+                    <button class="btn js-modal-form">Вызвать мастера на дом</button>
+                    <div class="contact-copy flexbox">
+                        <p>ИНН: 711701150202 <br>
+                            ОГРНИП: 308715405700241</p>
+                        <p>Служба поддержки <br>
+                            <a href="mailto:help@lppro.ru">help@lppro.ru</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-container">
@@ -920,7 +991,7 @@
                     </li>
                     <li>
                         <a href="https://www.instagram.com/?hl=ru" target="_blank">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-instagram" id="insta"></i>
                             <p>Instagram</p>
                         </a>
                     </li>
@@ -1017,11 +1088,19 @@
         </div>
         <span class="close-modal"></span>
     </div>
+
+    <div class="modal-window modal-video">
+        <div class="modal-window__body modal-video__body">
+            <iframe class="modal-video" src="https://www.youtube.com/embed/VPND4dyCMd0">
+            </iframe>
+        </div>
+        <span class="close-modal"></span>
+    </div>
     <!-- структура модального окна -->
     <!-- <div class="modal-window">
 		<div class="modal-window__body">
 		</div>
-		<span> Закрыть </span>
+		<span class="close-modal"></span>
 	</div> -->
     <!-- modal window -->
     <script src="js/lightgallery.min.js"></script>

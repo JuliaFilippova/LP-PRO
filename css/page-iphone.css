@@ -24,12 +24,20 @@
     width: 94%;
 }
 
+.sale-price-border {
+    position: relative;
+    background: linear-gradient(to right, #ec4f93 35%, #0052ab);
+    padding: 3px;
+    border-radius: 5px;
+}
+
 .sale-price {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 10px 19px;
-    background: transparent;
+    background: #f3f3f3;
     font-size: 28px;
     font-family: 'FuturaPT 700', sans-serif;
+    border-radius: 5px;
 }
 
 .page-iphone .btn {
@@ -199,6 +207,10 @@
     width: 70%;
 }
 
+.repl-stages-card__text .btn {
+    padding: 19px 70px;
+}
+
 .repl-stages-card__text p {
     font-size: 15px;
     line-height: 1.3;
@@ -225,6 +237,15 @@
     left: 25px;
     top: 15px;
     color: #ffffffe6;
+}
+
+.modal-video__body iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw !important;
+    height: 90vh !important;
 }
 
 /* --- SERVICES - BENEFITS --- */
@@ -269,7 +290,7 @@
 .battery-replacement-content__list li {
     font-size: 20px;
     font-family: 'FuturaPT 700', sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .battery-replacement-content__list li span {
@@ -345,6 +366,10 @@
     font-family: 'Arial', sans-serif;
 }
 
+.price-list .leave-request {
+    margin-top: 100px;
+}
+
 .leave-request_form {
     width: 640px;
     margin: auto;
@@ -352,15 +377,19 @@
 
 .leave-request_form .input input {
     padding-left: 15px;
+    background: transparent;
 }
 
 .leave-request_form .input {
-    width: 290px;
+    width: 300px;
     margin-bottom: 0;
 }
 
-.leave-request_form .btn {
+/* .leave-request_form .btn {
     padding: 17px 45px;
+} */
+.leave-request_form .input {
+    padding: 18px 20px;
 }
 
 /* --- TOOLS - REPAIR --- */
@@ -381,9 +410,13 @@
     margin-right: 50px;
 }
 
-.tools-tabs_content,
+.tools-tabs_content {
+    width: 55%;
+    box-shadow: 0 3px 6px 0px rgb(0, 0, 0, .2);
+}
+
 .tools-tabs {
-    width: 50%;
+    width: 45%;
 }
 
 .tools-tabs p {
@@ -406,6 +439,7 @@
 .tools-tabs__item span:hover,
 .tools-tabs__item.is-active span {
     background: #2b88ca;
+    box-shadow: 0 3px 6px 0px rgb(0, 0, 0, .2);
     color: #fff;
     transition: .3s;
 }
@@ -417,36 +451,6 @@
 .tools-repair-tab_content.is-active {
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.price-list {
-    padding-bottom: 513px;
-}
-
 
 /* --- MALFUNCTION --- */
 .malfunction-table {
@@ -494,6 +498,7 @@
     min-height: 50px;
     margin: 0 1.5% 1.5%;
     background: #f3f3f3;
+    box-shadow: 0 3px 6px 0px rgb(0, 0, 0, .2);
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
@@ -502,11 +507,17 @@
     position: relative;
 }
 
+.malfunction-items span:hover {
+    background: #f7f7f7;
+    box-shadow: 0 4px 5px 0px rgb(0, 0, 0, .3);
+}
+
 .malfunction-items span a {
     font-size: 16px;
     font-family: 'FuturaPT 700', sans-serif;
     color: #000;
     line-height: 1.1;
+    padding: 19px 0;
 }
 
 .sticker-hit {
@@ -531,7 +542,6 @@
     top: -14px;
     left: -9px;
     z-index: -1;
-
 }
 
 /* --- repair-info --- */
@@ -563,6 +573,13 @@
     font-size: 20px;
 }
 
+.reviews-content .btn {
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 270px;
+
+}
 
 .reviews-card {
     width: 100%;
@@ -589,6 +606,14 @@
     top: 40px;
     right: -25px;
     z-index: -1;
+}
+
+.reviews-card:nth-child(odd) .reviews-card__text {
+    box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, .2);
+}
+
+.reviews-card:nth-child(even) .reviews-card__text {
+    box-shadow: -10px 10px 25px -5px rgba(0, 0, 0, .2);
 }
 
 .reviews-card__rating {
@@ -638,4 +663,111 @@
 .reviews-category,
 .reviews-text {
     margin-bottom: 9px;
+}
+
+/* --- CONTACTS --- */
+.contacts {
+    padding: 80px 0 0;
+}
+
+.phone-big {
+    display: block;
+    text-align: center;
+    font-family: 'FuturaPT 700', sans-serif;
+    font-size: 38px;
+    color: #000;
+    margin-top: -45px;
+    margin-bottom: 50px;
+}
+
+.leave-request {
+    position: relative;
+}
+
+.contacts .leave-request_form {
+    width: 600px;
+}
+
+.leave-request:after {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, #fff 5%, #ccc, #fff);
+}
+
+.contacts .leave-request:before {
+    content: '';
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, #fff 5%, #ccc, #fff);
+}
+
+.contacts-content {
+    margin-top: 100px;
+}
+
+.contacts-content__box {
+    width: 35%;
+}
+
+.contacts-content__box:last-child {
+    width: 30%;
+}
+
+.contacts-content__box .company-data {
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+
+}
+
+.contacts-content__box .company-data .company-data__address {
+    min-height: 220px;
+    padding-right: 30px;
+}
+
+.contacts-content__box .company-data .address-block span {
+    font-size: 20px;
+}
+
+.address-block p {
+    margin: 8px 0;
+}
+
+.address-block a {
+    font-family: 'FuturaPT 700', sans-serif;
+    font-size: 16px;
+}
+
+.contacts-content__box .btn {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.contact-copy {
+    padding: 0 15px;
+}
+
+.contact-copy p {
+    color: #8a8a8a;
+    font-size: 13px;
+}
+
+.contact-copy p a {
+    color: #8a8a8a;
+    border-bottom: 1px solid transparent;
+}
+
+.contact-copy p a:hover {
+    color: #0000ee;
+    border-bottom: 1px solid;
+    cursor: pointer;
 }
