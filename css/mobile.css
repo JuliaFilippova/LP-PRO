@@ -90,7 +90,55 @@
         margin: 15px auto 40px;
     }
 
+    /* PAGE - IPHONE -- START */
+    .section-container {
+        width: 85%;
+    }
 
+    .page-iphone .offer-text {
+        width: 63%;
+    }
+
+    .offer-img {
+        width: 475px;
+    }
+
+    .replacement-content img {
+        width: 620px;
+    }
+
+    .service-benefits-content__card {
+        padding: 0px 15px;
+    }
+
+    .iphone-models .types-content {
+        justify-content: center;
+    }
+
+    .iphone-models .type-phone {
+        width: 15%;
+        margin: 0.7%;
+    }
+
+    .malfunction-table__name {
+        width: 20%;
+    }
+
+    .malfunction-table__name img {
+        margin-right: 20px;
+    }
+
+    .malfunction-items span {
+        width: 29.6%;
+        margin: 0 1% 1.5%;
+    }
+
+    .contacts-content__box .btn {
+        padding: 19px 25px;
+    }
+
+
+    /* PAGE - IPHONE -- END*/
 }
 
 /*-- 768-992px col-lg --*/
@@ -183,6 +231,148 @@
     .confid {
         font-size: 12px;
     }
+
+    /* PAGE - IPHONE -- START */
+
+
+    .page-iphone .offer-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* .offer-text .head-subtitle,
+    .offer-text .advantages, */
+    .page-iphone .offer-text .head-subtitle {
+        margin: 20px auto 25px;
+    }
+
+    .offer-text .advantages {
+        width: 75%;
+        margin: 20px auto 45px;
+    }
+
+    .offer-text__box {
+        width: 75%;
+        margin: auto;
+    }
+
+    .page-iphone .offer-img {
+        bottom: -85px;
+    }
+
+    .offer-img {
+        width: 400px;
+    }
+
+    .page-iphone .offer-img {
+        bottom: -85px;
+        right: 50%;
+        transform: translate(50%)
+    }
+
+    .page-iphone .offer-text {
+        padding: 60px 0 200px;
+    }
+
+    .replacement-content img {
+        width: 485px;
+    }
+
+    .repl-stages-card:nth-child(odd) {
+        margin-right: auto;
+        margin-left: unset;
+    }
+
+    .repl-stages-card:nth-child(even) .repl-stages-card__img {
+        order: 0;
+        margin-left: 0;
+        margin-right: 43px;
+    }
+
+    .repl-stages-card:nth-child(even) .repl-stages-card__img span {
+        right: -15px;
+        left: unset;
+    }
+
+    .repl-stages-card:nth-child(even) .repl-stages-card__img:before {
+        right: 0;
+    }
+
+    .service-benefits-content {
+        flex-flow: wrap;
+    }
+
+    .service-benefits-content__card {
+        width: 50%;
+    }
+
+    .service-benefits-content__cardn:nth-child(2):before {
+        display: none;
+    }
+
+    .battery-replacement-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .battery-replacement-content__list {
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .battery-replacement-content__list li {
+        position: relative;
+        width: 50%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+
+    .battery-replacement-content__list li span {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-33%);
+    }
+
+    .iphone-models .type-phone {
+        width: 22%;
+    }
+
+    .section-container {
+        width: 90%;
+    }
+
+    .tools-tabs_content {
+        order: 2;
+    }
+
+    .tools-repair-content {
+        flex-direction: column;
+    }
+
+    .tools-tabs_content,
+    .tools-tabs {
+        width: 80%;
+        margin: auto;
+    }
+
+    .tools-tabs__item,
+    .tools-tabs p {
+        text-align: center;
+    }
+
+    .tools-repair-tab_content img {
+        height: 280px;
+        object-fit: contain;
+    }
+
+
+    /* PAGE - IPHONE -- END*/
 }
 
 /*-- 575-768px col-lg --*/
@@ -249,6 +439,10 @@
     .footer-menu li:before {
         right: -23px;
     }
+
+    /* PAGE - IPHONE -- START */
+
+    /* PAGE - IPHONE -- END*/
 }
 
 /*-- 420-575px col-lg --*/
@@ -327,6 +521,10 @@
     .footer-menu {
         margin: 25px auto 30px;
     }
+
+    /* PAGE - IPHONE -- START */
+
+    /* PAGE - IPHONE -- END*/
 }
 
 /*-- 320-420px col-lg --*/
@@ -451,4 +649,8 @@
     .modal-privacy__body {
         height: 74vh;
     }
+
+    /* PAGE - IPHONE -- START */
+
+    /* PAGE - IPHONE -- END*/
 }
