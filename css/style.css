@@ -17,6 +17,11 @@ body {
   margin: auto;
 }
 
+.section-container {
+  width: 70%;
+  margin: auto;
+}
+
 div,
 p,
 form,
@@ -224,6 +229,10 @@ header {
 }
 
 /* флексбокс для классов */
+.battery-replacement-content,
+.service-benefits-content,
+.repl-stages-card,
+.replacement-advantages,
 .offer-text__box,
 .flexbox,
 .company-brend,
@@ -244,6 +253,7 @@ header {
   justify-content: space-between;
 }
 
+.replacement-advantages,
 .offer-text__box,
 .flexbox,
 .company-brend,
@@ -677,6 +687,10 @@ header {
 }
 
 /*-- types-devices --*/
+.battery-replacement,
+.service-benefits,
+.replacement-stages,
+.replacement,
 .about,
 .types-devices {
   padding: 80px 0 50px;
