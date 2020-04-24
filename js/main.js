@@ -96,9 +96,34 @@ window.addEventListener('DOMContentLoaded', () => {
     lightGallery(document.getElementById('lightgallery'));
 
 
+    // TABS
+    let tab = function () {
+        let tabNav = document.querySelectorAll('.tools-tabs__item'),
+            tabContent = document.querySelectorAll('.tools-repair-tab_content'),
+            tabName;
 
+        tabNav.forEach(item => {
+            item.addEventListener('click', selectTabNav)
+        });
 
+        function selectTabNav() {
+            tabNav.forEach(item => {
+                item.classList.remove('is-active');
+            });
+            this.classList.add('is-active');
+            tabName = this.getAttribute('data-tab-name');
+            selectTabContent(tabName);
+        }
 
+        function selectTabContent(tabName) {
+            tabContent.forEach(item => {
+                item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
+            })
+        }
+
+    };
+
+    tab();
 
 
 

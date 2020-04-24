@@ -687,6 +687,9 @@ header {
 }
 
 /*-- types-devices --*/
+.malfunction,
+.tools-repair,
+.price-list,
 .battery-replacement,
 .service-benefits,
 .replacement-stages,

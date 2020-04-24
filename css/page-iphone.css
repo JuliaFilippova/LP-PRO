@@ -92,7 +92,7 @@
 .repl-stages-card {
     width: 655px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     min-height: 250px;
 }
 
@@ -213,6 +213,7 @@
     position: relative;
     padding-left: 70px;
     padding-right: 30px;
+    margin-top: -30px;
 }
 
 .replacement-stages .btn i {
@@ -234,6 +235,7 @@
     text-align: center;
     position: relative;
     padding: 0 40px;
+    margin-top: 35px;
 }
 
 .service-benefits-content__card:before {
@@ -301,4 +303,179 @@
 
 .iphone-models .type-phone {
     width: 13%;
+    min-height: 150px;
+    justify-content: end;
+}
+
+.iphone-models .type-phone span:last-child {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+/* --- PRICE - LIST --- */
+.table {
+    font-family: 'FuturaPT 700', sans-serif;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.table thead th {
+    font-size: 24px;
+    color: #2b88ca;
+    text-align: start;
+    margin-bottom: 35px;
+    display: block;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.table tbody td {
+    font-size: 22px;
+}
+
+.table tbody td span {
+    color: #8a8a8a;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+}
+
+.leave-request_form {
+    width: 640px;
+    margin: auto;
+}
+
+.leave-request_form .input input {
+    padding-left: 15px;
+}
+
+.leave-request_form .input {
+    width: 290px;
+    margin-bottom: 0;
+}
+
+.leave-request_form .btn {
+    padding: 17px 45px;
+}
+
+/* --- TOOLS - REPAIR --- */
+.tools-repair {
+    background: #f3f3f3;
+}
+
+.tools-repair-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tools-tabs_content {
+    background: #fff;
+    border-radius: 50px;
+    padding: 20px;
+    margin-right: 50px;
+}
+
+.tools-tabs_content,
+.tools-tabs {
+    width: 50%;
+}
+
+.tools-tabs p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.tools-tabs__item {
+    margin-bottom: 10px;
+}
+
+.tools-tabs__item span {
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px;
+    font-family: 'FuturaPT 700', sans-serif;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.tools-tabs__item span:hover,
+.tools-tabs__item.is-active span {
+    background: #2b88ca;
+    color: #fff;
+    transition: .3s;
+}
+
+.tools-repair-tab_content {
+    display: none;
+}
+
+.tools-repair-tab_content.is-active {
+    display: block;
+}
+
+
+
+
+
+
+
+.price-list {
+    padding-bottom: 513px;
+}
+
+
+/* --- MALFUNCTION --- */
+.malfunction-table {
+    margin-top: 112px;
+}
+
+/* .malfunction-table tbody tr {
+    flex-flow: wrap;
+    justify-content: start;
+}
+
+.malfunction-table tbody tr td {
+    width: 21.75%;
+    font-size: 16px;
+    background: #f3f3f3;
+}
+
+.malfunction-table tbody tr td:first-child {
+    width: 25.5%;
+    font-size: 20px;
+} */
+.malfunction-table__name,
+.malfunction-table__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.malfunction-table__item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+
+.malfunction-table__name {
+    width: 20%;
+}
+
+.malfunction-table__name img {
+    width: 40px;
+    height: 34px;
+}
+
+.malfunction-items {
+    width: 80%;
+}
+
+.malfunction-items a {
+    padding: ;
 }
