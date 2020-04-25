@@ -250,6 +250,7 @@
     color: #ffffffe6;
 }
 
+.modal-video__body,
 .modal-video__body iframe {
     position: absolute;
     top: 50%;
