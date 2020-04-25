@@ -102,6 +102,9 @@ header {
   flex-grow: 1;
 }
 
+.svg-icon {
+  width: 20px;
+}
 
 .over-hid {
   overflow: hidden;
