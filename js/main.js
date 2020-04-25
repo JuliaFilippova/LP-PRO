@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     bindModal('.js-modal-form', '.modal-window', '.modal-window__body', '.close-modal'); //модальное окно по клику
     bindModal('.js-modal-privacy', '.modal-privacy', '.modal-privacy__body', '.close-modal'); //политика конфиденциальности
-    bindModal('.js-modal-video', '.modal-video', '.modal-video__body', '.close-modal'); //видео
+    // bindModal('.js-modal-video', '.modal-video', '.modal-video__body', '.close-modal'); //видео
 
 
     // hamburger menu
