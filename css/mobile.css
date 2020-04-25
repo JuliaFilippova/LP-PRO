@@ -233,15 +233,15 @@
     }
 
     /* PAGE - IPHONE -- START */
-
+    .section-title {
+        width: 95%;
+    }
 
     .page-iphone .offer-text {
         width: 100%;
         text-align: center;
     }
 
-    /* .offer-text .head-subtitle,
-    .offer-text .advantages, */
     .page-iphone .offer-text .head-subtitle {
         margin: 20px auto 25px;
     }
@@ -272,6 +272,11 @@
 
     .page-iphone .offer-text {
         padding: 60px 0 200px;
+    }
+
+    .reviews-content,
+    .repl-stages-content {
+        width: 100%;
     }
 
     .replacement-content img {
@@ -306,37 +311,12 @@
         width: 50%;
     }
 
-    .service-benefits-content__cardn:nth-child(2):before {
+    .service-benefits-content__card:nth-child(2)::before {
         display: none;
     }
 
-    .battery-replacement-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .battery-replacement-content__list {
-        width: 100%;
-        text-align: left;
-        margin: auto;
-        display: flex;
-        flex-flow: wrap;
-    }
-
-    .battery-replacement-content__list li {
-        position: relative;
         width: 50%;
-        text-align: center;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-
-
-    .battery-replacement-content__list li span {
-        position: absolute;
-        top: -30px;
-        left: 50%;
-        transform: translate(-33%);
     }
 
     .iphone-models .type-phone {
@@ -371,6 +351,68 @@
         object-fit: contain;
     }
 
+    .malfunction-table__name {
+        width: 25%;
+    }
+
+    .repair-info {
+        flex-direction: column;
+    }
+
+    .repair-info__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .repair-info__img {
+        width: 75%;
+        height: 230px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .repair-info__img img {
+        position: absolute;
+    }
+
+    .reviews-card {
+        position: relative;
+    }
+
+    .reviews-card__rating {
+        position: absolute;
+        z-index: 2;
+        right: 35px;
+        top: 3px;
+        width: auto;
+    }
+
+    .reviews-card__text {
+        width: 95%;
+        margin: auto;
+    }
+
+    .reviews-card:nth-child(even) .reviews-card__text:after,
+    .reviews-card__text:before {
+        display: none;
+    }
+
+    .contacts-content__box .company-data {
+        display: block;
+    }
+
+    .contacts-content {
+        flex-flow: wrap;
+    }
+
+    .contacts-content__box {
+        width: 50%;
+    }
+
+    .contacts-content__box:last-child {
+        width: 50%;
+        margin: 0 auto 30px;
+    }
 
     /* PAGE - IPHONE -- END*/
 }
@@ -441,6 +483,100 @@
     }
 
     /* PAGE - IPHONE -- START */
+    h2 {
+        font-size: 34px;
+    }
+
+    .section-subtitle {
+        font-size: 21px;
+    }
+
+    .offer-text__box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .sale-price-border {
+        margin-bottom: 25px;
+    }
+
+    .offer-img_block {
+        display: block;
+    }
+
+    .replacement-content img {
+        width: 80%;
+    }
+
+    .replacement-advantages__box {
+        font-size: 35px;
+    }
+
+    .repl-stages-card:nth-child(even),
+    .repl-stages-card {
+        width: 100%;
+    }
+
+    .leave-request_form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .leave-request_form .btn {
+        width: 300px;
+        margin-top: 25px;
+    }
+
+    .malfunction-items span {
+        width: 46.6%;
+        margin: 0 1% 2.5%;
+    }
+
+    .malfunction-table__name {
+        display: block;
+        text-align: center;
+    }
+
+    .malfunction-table__name img {
+        margin: auto;
+    }
+
+    .reviews .section-subtitle {
+        width: 90%;
+    }
+
+    .reviews-persona {
+        width: 70%;
+    }
+
+    .contacts-content__box:last-child {
+        width: 75%;
+    }
+
+    .modal-video__body iframe {
+        width: 98vw !important;
+        height: 65vh !important;
+    }
+
+    .battery-replacement-content__list {
+        width: 45%;
+    }
+
+    .iphone-models .type-phone {
+        min-height: 135px;
+    }
+
+    .iphone-models .type-phone span:last-child {
+        font-size: 24px;
+    }
+
+    .contacts .leave-request_form {
+        width: 100%;
+    }
+
+    .data-icon {
+        margin-left: 7px;
+    }
 
     /* PAGE - IPHONE -- END*/
 }
@@ -523,6 +659,294 @@
     }
 
     /* PAGE - IPHONE -- START */
+    h2 {
+        font-size: 28px;
+    }
+
+    .section-title {
+        margin: 0 auto 35px;
+    }
+
+    .section-subtitle {
+        margin: 0px auto 75px;
+        font-size: 19px;
+        width: 99%;
+    }
+
+    .replacement-advantages__box {
+        font-size: 28px;
+    }
+
+    .replacement-advantages__box span {
+        font-size: 13px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .replacement-advantages {
+        margin: 30px 0 35px;
+    }
+
+    .repl-stages-card__img {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .repl-stages-card__img span {
+        font-size: 25px;
+    }
+
+    .repl-stages-card:nth-child(odd) .repl-stages-card__img span {
+        right: -7px;
+    }
+
+    .repl-stages-card__img span:before {
+        left: -10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .repl-stages-card:nth-child(even) .repl-stages-card__img span {
+        right: -7px;
+    }
+
+    .repl-stages-card:first-child .repl-stages-card__img:before {
+        bottom: -160px;
+        left: 100px;
+        height: 180px;
+    }
+
+    .repl-stages-card:nth-child(even) .repl-stages-card__img:before {
+        height: 150px;
+        bottom: -135px;
+    }
+
+    .repl-stages-card:nth-child(odd) .repl-stages-card__img:before {
+        height: 160px;
+        bottom: -135px;
+        left: 99px;
+    }
+
+    .repl-stages-card__text p:first-child {
+        font-size: 16px;
+    }
+
+    .repl-stages-card__text p {
+        font-size: 14px;
+    }
+
+    .repl-stages-card__text .btn {
+        padding: 16px 35px;
+    }
+
+    .repl-stages-card:first-child {
+        margin-bottom: 25px;
+    }
+
+    .repl-stages-card {
+        min-height: 230px;
+    }
+
+    .service-benefits-content__card {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .service-benefits-content__card:before {
+        width: 90%;
+        height: 2px;
+        top: unset;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .service-benefits-content__card:nth-child(2)::before {
+        display: block;
+    }
+
+    .battery-replacement-content__list li span::before {
+        width: 24px;
+        height: 24px;
+    }
+
+    .battery-replacement-content__list li span i {
+        font-size: 14px;
+        margin-top: 0px;
+        display: block;
+        margin-left: -3px;
+    }
+
+    .battery-replacement-content__list li {
+        font-size: 18px;
+        min-height: 85px;
+        margin-bottom: 25px;
+    }
+
+    .iphone-models .type-phone {
+        width: 23%;
+        min-height: 100px;
+        padding: 5px 10px;
+    }
+
+    .type-phone span {
+        font-size: 14px;
+        color: #9c9c9c;
+        min-height: 30px;
+    }
+
+    .iphone-models .type-phone span:last-child {
+        font-size: 18px;
+        color: #000;
+    }
+
+    .price-list .leave-request {
+        margin-top: 60px;
+    }
+
+    .table tbody td {
+        font-size: 17px;
+    }
+
+    .table tbody td span {
+        font-size: 13px;
+    }
+
+    .tools-repair-tab_content img {
+        height: 190px;
+    }
+
+    .reviews,
+    .malfunction,
+    .tools-repair,
+    .price-list,
+    .battery-replacement,
+    .service-benefits,
+    .replacement-stages {
+        padding: 50px 0 70px;
+    }
+
+    .malfunction-table {
+        margin-top: 50px;
+    }
+
+    .malfunction-table__item {
+        flex-direction: column;
+        text-align: center;
+        margin: 30px auto 20px;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .malfunction-table__name {
+        margin-bottom: 25px;
+    }
+
+    .malfunction-items {
+        width: 95%;
+    }
+
+    .malfunction-items span {
+        width: 24.6%;
+        min-height: 85px;
+        align-items: baseline;
+        padding-top: 12px;
+    }
+
+    .malfunction-items span a {
+        font-size: 13px;
+        padding: 15px 0;
+    }
+
+    .sticker-hit {
+        font-size: 12px;
+        top: -12px;
+        right: unset;
+        left: 20px;
+    }
+
+    .sticker-hit:before {
+        width: 45px;
+        height: 23px;
+        border-radius: 50px;
+        top: -8px;
+        left: -14px;
+    }
+
+    .repair-info__img img {
+        top: 60px;
+    }
+
+    .repair-info {
+        margin-top: 0px;
+    }
+
+    .reviews .section-subtitle {
+        font-size: 17px;
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .reviews-card__text {
+        padding: 15px;
+    }
+
+    .reviews-card__rating {
+        padding-top: 17px;
+        right: 20px;
+    }
+
+    .reviews-card {
+        margin-bottom: 30px;
+    }
+
+    .phone-big {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+
+    .contacts-content__box {
+        width: 85%;
+        margin: auto;
+    }
+
+    .contacts-content__box .company-data .company-data__address {
+        padding-right: 0;
+        min-height: 170px;
+    }
+
+    .address-block_data {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 10px;
+    }
+
+    .address-block p {
+        margin-top: 7px;
+        font-size: 12px;
+    }
+
+    .address-block_data p {
+        margin: 0;
+    }
+
+    .contacts-content__box .company-data .address-block span {
+        font-size: 17px;
+    }
+
+    .contacts-content__box .btn {
+        padding: 15px 25px;
+    }
+
+    .contacts-content__box:last-child {
+        width: 85%;
+    }
+
+    .contact-copy p {
+        font-size: 11px;
+    }
 
     /* PAGE - IPHONE -- END*/
 }
@@ -611,10 +1035,6 @@
         margin-bottom: 35px;
     }
 
-    /* .type-phone__brend {
-        height: 55px;
-    } */
-
     .type-phone__brend img {
         width: 80%;
         margin: auto;
@@ -651,6 +1071,169 @@
     }
 
     /* PAGE - IPHONE -- START */
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .section-title {
+        width: 100%;
+    }
+
+    .section-subtitle {
+        font-size: 17px;
+        margin: 0px auto 55px;
+    }
+
+    .reviews,
+    .malfunction,
+    .tools-repair,
+    .price-list,
+    .replacement,
+    .about,
+    .types-devices {
+        padding: 50px 0 35px;
+    }
+
+    .offer-img {
+        width: 100%;
+    }
+
+    .page-iphone .offer-img {
+        bottom: -50px;
+    }
+
+    .replacement-advantages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .replacement-advantages__box {
+        /* font-size: 52px; */
+        width: 100%;
+    }
+
+    .replacement-advantages__box:first-child {
+        order: 2;
+        margin-top: 25px;
+    }
+
+    .repl-stages-card__text .btn,
+    .replacement-content .btn {
+        padding: 15px 10px;
+    }
+
+    .repl-stages-card__img {
+        max-width: 75px;
+        height: 75px;
+    }
+
+    .repl-stages-card:nth-child(odd) .repl-stages-card__img:before {
+        height: 230px;
+        bottom: -210px;
+        left: 75px;
+    }
+
+    .repl-stages-card:nth-child(even) .repl-stages-card__img:before {
+        height: 175px;
+        bottom: -160px;
+    }
+
+    .repl-stages-card:nth-child(odd) .repl-stages-card__img:before {
+        height: 185px;
+        bottom: -163px;
+    }
+
+    .repl-stages-card:nth-child(even) .repl-stages-card__img,
+    .repl-stages-card:nth-child(odd) .repl-stages-card__img {
+        margin-right: 25px;
+    }
+
+    .repl-stages-card__text p {
+        margin-bottom: 10px;
+    }
+
+    .btn-video {
+        padding-left: 60px;
+        font-size: 16px;
+    }
+
+    .replacement-stages .btn i {
+        font-size: 25px;
+        top: 13px;
+    }
+
+    .battery-replacement-content {
+        flex-direction: column;
+    }
+
+    .battery-replacement-content__list {
+        width: 100%;
+    }
+
+    .battery-replacement-content__list li {
+        min-height: 55px;
+        margin-bottom: 10px;
+    }
+
+    .type-phone span {
+        font-size: 13px;
+        min-height: 20px;
+    }
+
+    .iphone-models .type-phone span:last-child {
+        font-size: 15px;
+    }
+
+    .iphone-models .type-phone {
+        min-height: 80px;
+        padding: 5px 5px;
+    }
+
+    .table {
+        margin-bottom: 25px;
+    }
+
+    .table thead th {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .table tbody td:last-child {
+        /* font-size: 17px; */
+        width: 110px;
+        text-align: end;
+    }
+
+    .leave-request_form .btn,
+    .leave-request_form .input {
+        width: 100%;
+    }
+
+    .tools-tabs_content,
+    .tools-tabs {
+        width: 100%;
+    }
+
+    .malfunction-items span {
+        width: 29.4%;
+    }
+
+    .repair-info__img {
+        height: 150px;
+    }
+
+    .repair-info__img img {
+        top: 10px;
+    }
+
+    .contacts-content__box:last-child,
+    .contacts-content__box {
+        width: 98%;
+    }
 
     /* PAGE - IPHONE -- END*/
 }

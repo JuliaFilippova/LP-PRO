@@ -129,11 +129,4 @@ window.addEventListener('DOMContentLoaded', () => {
     tab();
 
 
-
-
-
-
-
-
-
 })

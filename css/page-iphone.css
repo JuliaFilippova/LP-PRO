@@ -53,12 +53,15 @@
     font-size: 24px;
     font-family: 'FuturaPT 700', sans-serif;
     text-align: center;
-    margin: -35px 0 75px;
+    /* margin: -35px 0 75px; */
     line-height: 1.5;
+    width: 90%;
+    margin: -35px auto 75px;
 }
 
 .replacement-advantages {
     margin: 50px 0 65px;
+    align-items: baseline;
 }
 
 .replacement-content img {
@@ -292,6 +295,7 @@
     font-size: 20px;
     font-family: 'FuturaPT 700', sans-serif;
     margin-bottom: 60px;
+    display: flex;
 }
 
 .battery-replacement-content__list li span {
@@ -300,6 +304,7 @@
     z-index: 1;
     display: inline-block;
     margin-right: 15px;
+    margin-top: 5px;
     font-size: 18px;
 }
 
@@ -572,6 +577,7 @@
 
 .reviews .section-subtitle {
     font-size: 20px;
+    width: 55%;
 }
 
 .reviews-content .btn {
