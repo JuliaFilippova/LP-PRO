@@ -770,8 +770,8 @@
         height: 24px;
     }
 
-    .battery-replacement-content__list li span i {
-        font-size: 14px;
+    .svg-icon_check {
+        width: 15px;
         margin-top: 0px;
         display: block;
         margin-left: -3px;
