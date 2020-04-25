@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 modal.classList.add('modal-overlay-show'); //класс для плавного показа мод окна
                 modalBody.classList.add('modal-body-show'); //класс для плавного показа мод окна
-                modalBody.classList.add('modal-video'); //класс для показа видео в мод окне
+                // modalBody.classList.add('modal-video'); //класс для показа видео в мод окне
                 document.body.style.overflow = 'hidden'; //убирает скролл
                 document.body.style.marginRight = `${scroll}px`; // убирает дергание страницы при открытие модального окна
 
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 modal.classList.remove('modal-overlay-show'); //класс для плавного показа мод окна
                 modalBody.classList.remove('modal-body-show'); //класс для плавного показа мод окна
-                modalBody.classList.remove('modal-video'); //класс для удаления видео в мод окне
+                // modalBody.classList.remove('modal-video'); //класс для удаления видео в мод окне
                 document.body.style.overflow = ''; //возвращает скролл
                 document.body.style.marginRight = `0px`; // убирает дергание страницы при закрытии модального окна
             });
@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 modal.classList.remove('modal-overlay-show'); //класс для плавного показа мод окна
                 modalBody.classList.remove('modal-body-show'); //класс для плавного показа мод окна
-                modalBody.classList.remove('modal-video'); //класс для удаления видео в мод окне
+                // modalBody.classList.remove('modal-video'); //класс для удаления видео в мод окне
                 document.body.style.overflow = ''; //возвращает скролл
                 document.body.style.marginRight = `0px`; // убирает дергание страницы при закрытии модального окна
             }
