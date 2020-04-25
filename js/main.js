@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+
     // trigger-селектор нашей кнопки на которую клик, modal-модальное окно которые открываем, close - закрытие именно этого модального окна.
     function bindModal(triggerSelector, modalSelector, modalSelectorBody, closeSelector, closeClickOverlay = true) {
 
@@ -130,3 +131,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 })
+window.onload = function () {
+    setTimeout(function () {
+        document.getElementById('video').src = 'https://www.youtube.com/embed/VPND4dyCMd0';
+    }, 5000);
+};
