@@ -235,11 +235,18 @@
     margin-top: -30px;
 }
 
-.replacement-stages .btn i {
+/* .replacement-stages .btn i {
     font-size: 30px;
     position: absolute;
     left: 25px;
     top: 15px;
+    color: #ffffffe6;
+} */
+.svg-icon_video {
+    width: 30px;
+    position: absolute;
+    left: 25px;
+    top: 17px;
     color: #ffffffe6;
 }
 
