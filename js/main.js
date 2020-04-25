@@ -73,7 +73,10 @@ window.addEventListener('DOMContentLoaded', () => {
         let menu = document.querySelector(selector),
             buttonMenu = document.querySelector('.burger-menu__btn');
 
-        buttonMenu.addEventListener('click', () => {
+        buttonMenu.addEventListener('click', (e) => {
+            if (e.target) {
+                e.preventDefault();
+            }
             menu.classList.toggle('burger-menu__active');
             document.body.classList.toggle('over-hid');
         });
