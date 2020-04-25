@@ -553,6 +553,7 @@
         width: 75%;
     }
 
+    .modal-video__body,
     .modal-video__body iframe {
         width: 98vw !important;
         height: 65vh !important;

@@ -134,5 +134,5 @@ window.addEventListener('DOMContentLoaded', () => {
 window.onload = function () {
     setTimeout(function () {
         document.getElementById('video').src = 'https://www.youtube.com/embed/VPND4dyCMd0';
-    }, 1000);
+    }, 100);
 };
