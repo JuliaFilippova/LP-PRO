@@ -1,17 +1,17 @@
 /*FONT-FACE*/
 @font-face {
     font-family: 'FuturaPT 700';
-    src: url('../fonts/FuturaPT-Bold.eot');
+    src: url('../fonts/FuturaPT-Demi.eot');
     /* IE9 Compat Modes */
-    src: url('../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+    src: url('../fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
         /* IE6-IE8 */
-        url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Demi.woff2') format('woff2'),
         /* Super Modern Browsers */
-        url('../fonts/FuturaPT-Bold.woff') format('woff'),
+        url('../fonts/FuturaPT-Demi.woff') format('woff'),
         /* Pretty Modern Browsers */
-        url('../fonts/FuturaPT-Bold.ttf') format('truetype'),
+        url('../fonts/FuturaPT-Demi.ttf') format('truetype'),
         /* Safari, Android, iOS */
-        url('../fonts/FuturaPT-Bold.svg#FuturaPT-Bold') format('svg');
+        url('../fonts/FuturaPT-Demi.svg#FuturaPT-Demi') format('svg');
     /* Legacy iOS */
 }
 
