@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-
-    // trigger-селектор нашей кнопки на которую клик, modal-модальное окно которые открываем, close - закрытие именно этого модального окна.
+    // trigger-селектор кнопки по клику, modalSelector-модальное окно которые открываем, modalSelectorBody-содержимое окна, close - закрытие именно этого модального окна.
     function bindModal(triggerSelector, modalSelector, modalSelectorBody, closeSelector, closeClickOverlay = true) {
 
         const trigger = document.querySelectorAll(triggerSelector), //кнопки вызывающие модалку
@@ -18,10 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 modal.classList.add('modal-overlay-show'); //класс для плавного показа мод окна
                 modalBody.classList.add('modal-body-show'); //класс для плавного показа мод окна
-                // modalBody.classList.add('modal-video'); //класс для показа видео в мод окне
                 document.body.style.overflow = 'hidden'; //убирает скролл
                 document.body.style.marginRight = `${scroll}px`; // убирает дергание страницы при открытие модального окна
-
             });
         });
         close.forEach(item => {
@@ -30,19 +27,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 modal.classList.remove('modal-overlay-show'); //класс для плавного показа мод окна
                 modalBody.classList.remove('modal-body-show'); //класс для плавного показа мод окна
-                // modalBody.classList.remove('modal-video'); //класс для удаления видео в мод окне
                 document.body.style.overflow = ''; //возвращает скролл
                 document.body.style.marginRight = `0px`; // убирает дергание страницы при закрытии модального окна
             });
-
         });
 
-        modal.addEventListener('click', (e) => { //по клику вне формы закрываем окно подложка
+        modal.addEventListener('click', (e) => { //по клику вне формы закрываем окно (подложка)
             if (e.target === modal && closeClickOverlay) {
 
                 modal.classList.remove('modal-overlay-show'); //класс для плавного показа мод окна
                 modalBody.classList.remove('modal-body-show'); //класс для плавного показа мод окна
-                // modalBody.classList.remove('modal-video'); //класс для удаления видео в мод окне
                 document.body.style.overflow = ''; //возвращает скролл
                 document.body.style.marginRight = `0px`; // убирает дергание страницы при закрытии модального окна
             }
@@ -63,10 +57,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
         return scrollWidth;
     }
+    // запускаем функции модальных окон
     bindModal('.js-modal-form', '.modal-window', '.modal-window__body', '.close-modal'); //модальное окно по клику
     bindModal('.js-modal-privacy', '.modal-privacy', '.modal-privacy__body', '.close-modal'); //политика конфиденциальности
-    // bindModal('.js-modal-video', '.modal-video', '.modal-video__body', '.close-modal'); //видео
-
+    bindModal('.js-modal-video', '.modal-video', '.modal-video__body', '.close-modal'); //видео
 
     // hamburger menu
     function burgerMenu(selector) {
@@ -90,18 +84,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     burgerMenu('.burger-menu');
 
-
-
     // маска для ввода телефона
     document.querySelectorAll('.phone-mask').forEach(item => {
         IMask(item, {
             mask: '+{7} (000) 000-00-00'
         });
     })
-
-    // лайтбокс галерея
-    lightGallery(document.getElementById('lightgallery'));
-
 
     // TABS
     let tab = function () {
@@ -127,15 +115,17 @@ window.addEventListener('DOMContentLoaded', () => {
                 item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
             })
         }
-
     };
-
     tab();
 
 
 })
+// загружаем видео в модальном окне, только после всей загрузки стр
 window.onload = function () {
     setTimeout(function () {
         document.getElementById('video').src = 'https://www.youtube.com/embed/VPND4dyCMd0';
     }, 100);
+
+    // лайтбокс галерея
+    lightGallery(document.getElementById('lightgallery'));
 };

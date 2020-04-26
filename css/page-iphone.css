@@ -32,7 +32,6 @@
 }
 
 .sale-price {
-    /* border: 2px solid red; */
     padding: 10px 19px;
     background: #f3f3f3;
     font-size: 28px;
@@ -53,7 +52,6 @@
     font-size: 24px;
     font-family: 'FuturaPT 700', sans-serif;
     text-align: center;
-    /* margin: -35px 0 75px; */
     line-height: 1.5;
     width: 90%;
     margin: -35px auto 75px;
@@ -397,9 +395,6 @@
     margin-bottom: 0;
 }
 
-/* .leave-request_form .btn {
-    padding: 17px 45px;
-} */
 .leave-request_form .input {
     padding: 18px 20px;
 }
