@@ -60,29 +60,16 @@ window.addEventListener('DOMContentLoaded', () => {
     // запускаем функции модальных окон
     bindModal('.js-modal-form', '.modal-window', '.modal-window__body', '.close-modal'); //модальное окно по клику
     bindModal('.js-modal-privacy', '.modal-privacy', '.modal-privacy__body', '.close-modal'); //политика конфиденциальности
+
     bindModal('.js-modal-video', '.modal-video', '.modal-video__body', '.close-modal'); //видео
-
-    // hamburger menu
-    function burgerMenu(selector) {
-        let menu = document.querySelector(selector),
-            buttonMenu = document.querySelector('.burger-menu__btn');
-
-        buttonMenu.addEventListener('click', (e) => {
-            if (e.target) {
-                e.preventDefault();
-            }
-            menu.classList.toggle('burger-menu__active');
-            document.body.classList.toggle('over-hid');
-        });
-
-        document.querySelector('.modal-window_burger').onclick = (e) => {
-            if (e.target.classList.contains('modal-window_burger')) {
-                menu.classList.remove('burger-menu__active');
-                document.body.classList.remove('over-hid');
-            }
-        }
-    }
-    burgerMenu('.burger-menu');
+    // проверка
+    // let videoBtn = document.querySelector('.js-modal-video');
+    // if (videoBtn.length != 0) {
+    //     console.log('на странице есть видео')
+    //     bindModal('.js-modal-video', '.modal-video', '.modal-video__body', '.close-modal'); //видео
+    // } else {
+    //     console.log('на странице нет видео')
+    // }
 
     // маска для ввода телефона
     document.querySelectorAll('.phone-mask').forEach(item => {
@@ -117,9 +104,28 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     };
     tab();
-
-
 })
+// hamburger menu
+function burgerMenu(selector) {
+    let menu = document.querySelector(selector),
+        buttonMenu = document.querySelector('.burger-menu__btn');
+
+    buttonMenu.addEventListener('click', (e) => {
+        if (e.target) {
+            e.preventDefault();
+        }
+        menu.classList.toggle('burger-menu__active');
+        document.body.classList.toggle('over-hid');
+    });
+
+    document.querySelector('.modal-window_burger').onclick = (e) => {
+        if (e.target.classList.contains('modal-window_burger')) {
+            menu.classList.remove('burger-menu__active');
+            document.body.classList.remove('over-hid');
+        }
+    }
+}
+burgerMenu('.burger-menu');
 // загружаем видео в модальном окне, только после всей загрузки стр
 window.onload = function () {
     setTimeout(function () {
