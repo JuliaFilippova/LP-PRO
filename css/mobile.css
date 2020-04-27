@@ -85,7 +85,6 @@
     }
 
     .footer-menu {
-        width: 380px;
         margin: 15px auto 40px;
     }
 
@@ -224,7 +223,6 @@
     .footer-menu li:before {
         content: '\2022';
         position: absolute;
-        right: -30px;
         top: 0;
     }
 
@@ -558,18 +556,6 @@
         height: 155px;
     }
 
-    .footer-container {
-        width: 65%;
-    }
-
-    .footer-menu {
-        width: 335px;
-    }
-
-    .footer-menu li:before {
-        right: -23px;
-    }
-
     /* PAGE - IPHONE -- START */
     h2 {
         font-size: 34px;
@@ -810,10 +796,6 @@
 
     .type-phone {
         width: 31%;
-    }
-
-    .footer-container {
-        width: 95%;
     }
 
     .modal-window__body {
@@ -1289,12 +1271,8 @@
         width: 95%;
     }
 
-    .footer-menu {
-        width: 295px;
-    }
-
-    .footer-menu li:before {
-        right: -15px;
+    .footer-menu li {
+        padding: 0 10px 10px;
     }
 
     .modal-privacy__body {
