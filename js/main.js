@@ -134,7 +134,7 @@ window.onload = function () {
     // загружаем карту, только после всей загрузки стр
     setTimeout(function () {
         document.getElementById('map').src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A4d349ab81caa0c2acf7f710b82840e0d8e61af791eaee42e673daa9820f15ecc&amp;source=constructor';
-    }, 4000);
+    }, 3000);
 
     // лайтбокс галерея
     lightGallery(document.getElementById('lightgallery'));
